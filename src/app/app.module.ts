@@ -31,6 +31,7 @@ import { XLargeDirective } from './home/x-large';
 
 import '../styles/styles.scss';
 import '../styles/headings.css';
+import { DetailModule } from './+detail/detail.module';
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -54,7 +55,7 @@ type StoreType = {
     AboutComponent,
     HomeComponent,
     NoContentComponent,
-    XLargeDirective
+    XLargeDirective,
   ],
   /**
    * Import Angular's modules.
@@ -63,7 +64,8 @@ type StoreType = {
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules })
+    RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules }),
+    DetailModule,
   ],
   /**
    * Expose our Services and Providers into Angular's dependency injection.

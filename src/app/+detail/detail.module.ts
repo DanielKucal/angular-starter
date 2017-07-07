@@ -18,7 +18,8 @@ console.log('`Detail` bundle loaded asynchronously');
   imports: [
     CommonModule,
     FormsModule,
-    RouterModule.forChild(routes),
+    // RouterModule.forChild(routes),
+    RouterModule,
   ],
 })
 export class DetailModule {
